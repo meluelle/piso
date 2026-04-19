@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi galería</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #111; color: #fff; }
+    .wrap { max-width: 1000px; margin: 0 auto; padding: 24px; }
+    h1 { margin-bottom: 8px; }
+    p { color: #bbb; margin-bottom: 24px; }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Mi galería</h1>
+    <p>Fotos personales</p>
+
+    <div class="gallery">
+      <img src="https://picsum.photos/id/1015/600/400" alt="">
+      <img src="https://picsum.photos/id/1025/600/400" alt="">
+      <img src="https://picsum.photos/id/1035/600/400" alt="">
+      <img src="https://picsum.photos/id/1045/600/400" alt="">
+    </div>
+  </div>
+</body>
+</html>
